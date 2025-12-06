@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Designer Portfolio</title>
+  <link rel="stylesheet" href="../css/bam.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">Jane Doe</div>
+    <ul class="nav-links">
+      <li><a href="#profile">About</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#stats">Statistics</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Jane Doe</h1>
+    <p>Fashion Designer • Creative Visionary</p>
+  </header>
+
+  <!-- Profile Section -->
+  <section id="profile" class="profile">
+    <div class="profile-pic">
+      <img src="https://source.unsplash.com/300x400/?portrait,fashion" alt="Designer Picture">
+    </div>
+    <div class="profile-bio">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate fashion designer who blends modern trends with timeless elegance. 
+        My work celebrates individuality, color, and creativity.
+      </p>
+    </div>
+  </section>
+
+  <!-- Works Section -->
+  <section id="works" class="works">
+    <h2>My Works</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/400x500/?fashion,model" alt="Work 1">
+      <img src="https://source.unsplash.com/400x500/?fashion,design" alt="Work 2">
+      <img src="https://source.unsplash.com/400x500/?fashion,runway" alt="Work 3">
+      <img src="https://source.unsplash.com/400x500/?fashion,style" alt="Work 4">
+    </div>
+  </section>
+
+  <!-- Statistics Section -->
+  <section id="stats" class="stats">
+    <h2>Statistics</h2>
+    <div class="circle-stats">
+      <div class="circle">
+        <svg>
+          <circle cx="60" cy="60" r="50"></circle>
+          <circle cx="60" cy="60" r="50" style="--percent:80;"></circle>
+        </svg>
+        <div class="number">80%</div>
+        <p>Collections</p>
+      </div>
+
+      <div class="circle">
+        <svg>
+          <circle cx="60" cy="60" r="50"></circle>
+          <circle cx="60" cy="60" r="50" style="--percent:65;"></circle>
+        </svg>
+        <div class="number">65%</div>
+        <p>Runway Shows</p>
+      </div>
+
+      <div class="circle">
+        <svg>
+          <circle cx="60" cy="60" r="50"></circle>
+          <circle cx="60" cy="60" r="50" style="--percent:50;"></circle>
+        </svg>
+        <div class="number">50%</div>
+        <p>Awards</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Section -->
+  <section id="location" class="location">
+    <h2>My Location</h2>
+    <p>I am based in Lagos, Nigeria.</p>
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126092.555123456!2d3.321!3d6.5244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf4b9f0f12345%3A0x123456789abcdef!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1700000000000" 
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Review Section -->
+<section id="reviews" class="reviews">
+  <h2>What People Say</h2>
+  <div class="review-cards">
+    <!-- Review 1 -->
+    <div class="review-card">
+      <p class="comment">"Jane’s designs are breathtaking and full of creativity. She truly understands fashion."</p>
+      <h3>- Sarah O.</h3>
+      <div class="stars">★★★★★</div>
+    </div>
+
+    <!-- Review 2 -->
+    <div class="review-card">
+      <p class="comment">"Working with Jane was inspiring. Her attention to detail is unmatched."</p>
+      <h3>- Michael K.</h3>
+      <div class="stars">★★★★☆</div>
+    </div>
+
+    <!-- Review 3 -->
+    <div class="review-card">
+      <p class="comment">"Her collections bring color and elegance together beautifully. Highly recommended!"</p>
+      <h3>- Aisha B.</h3>
+      <div class="stars">★★★★★</div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: 
+      <a href="mailto:jane.doe@example.com" target="_blank">jane.doe@example.com</a>
+    </p>
+    <p>Phone: 
+      <a href="tel:+2348001234567">+234 800 123 4567</a>
+    </p>
+    <p>Follow me: 
+      <a href="https://www.instagram.com/janedoe" target="_blank">Instagram</a> | 
+      <a href="https://twitter.com/janedoe" target="_blank">Twitter</a> | 
+      <a href="https://www.linkedin.com/in/janedoe" target="_blank">LinkedIn</a>
+    </p>
+    <p>WhatsApp: 
+      <a href="https://wa.me/2348001234567" target="_blank">Chat with me</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Jane Doe | Designed with love and color</p>
+  </footer>
+
+  <script>
+  // Select the hamburger button and the nav links container
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+
+  // Toggle menu on click
+  hamburger.addEventListener("click", () => {
+    // Show or hide the nav links
+    navLinks.classList.toggle("active");
+
+    // Animate hamburger into an "X"
+    hamburger.classList.toggle("toggle");
+  });
+</script>
+
+
+</body>
+</html>
